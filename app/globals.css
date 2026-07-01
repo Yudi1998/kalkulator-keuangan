@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f7f3e9;
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(34,32,27,0.045) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  ::selection {
+    background-color: #C89B3C;
+    color: #22201B;
+  }
+}
+
+@layer utilities {
+  .perforated-top {
+    background-image: radial-gradient(circle, #F7F3E9 5px, transparent 5.5px);
+    background-size: 16px 16px;
+    background-position: -4px -8px;
+    background-repeat: repeat-x;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
